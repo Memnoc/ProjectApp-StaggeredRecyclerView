@@ -1,4 +1,4 @@
-package com.smartdroidesign.staggeredrecyclerview;
+package com.smartdroidesign.staggeredrecyclerview.model;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -6,14 +6,18 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-class Holder extends RecyclerView.ViewHolder {
+import com.smartdroidesign.staggeredrecyclerview.R;
 
-    ImageView image;
-    TextView text;
+public class Holder extends RecyclerView.ViewHolder {
 
-    Holder(@NonNull View itemView) {
+    public ImageView image;
+    public TextView text;
+
+    public Holder(@NonNull View itemView) {
         super(itemView);
         this.image = itemView.findViewById(R.id.images);
         this.text = itemView.findViewById(R.id.names);
+
+
     }
 }
